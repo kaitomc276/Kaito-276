@@ -1033,7 +1033,6 @@ function CheckLevel()
             NameMon = "Skull Slayer";
             CFrameQ = CFrame.new(- 16665.19140625, 104.59640502929688, 1579.6943359375);
             CFrameMon = CFrame.new(- 16811.5703125, 84.625244140625, 1542.235107421875);
--- SUBMARINE AREA (đúng mốc 2600 / 2625 / 2650 / 2675)
 			elseif a >= 2600 and a <= 2624 then
 				Mon = "Reef Bandit"
 				Qdata = 1;
