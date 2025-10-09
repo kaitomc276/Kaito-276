@@ -1033,45 +1033,45 @@ function CheckLevel()
             NameMon = "Skull Slayer";
             CFrameQ = CFrame.new(- 16665.19140625, 104.59640502929688, 1579.6943359375);
             CFrameMon = CFrame.new(- 16811.5703125, 84.625244140625, 1542.235107421875);
-			elseif a >= 2600 and a <= 2624 then
+				        if ((v197 == 2600) or (v197 <= 2624) or (SelectMonster == "Reef Bandit")) then
 				Ms = "Reef Bandit"
-				QuestLv = 1;
 				NameQuest = "SubmergedQuest1";
+				QuestLv = 1;
 				NameMon = "Reef Bandit"
 				CFrameQ = CFrame.new(10882.264, -2086.322, 10034.226) -- NPC Submerged
 				CFrameMon = CFrame.new(10736.6191, -2087.8439, 9338.4882)
-			elseif a >= 2625 and a <= 2649 then
+			        if ((v197 == 2625) or (v197 <= 2649) or (SelectMonster == "Coral Pirate")) then
 				Ms = "Coral Pirate"
-				QuestLv = 2;
 				NameQuest = "SubmergedQuest1";
+				QuestNameQuest = "SubmergedQuest2";Lv = 2;
 				NameMon = "Coral Pirate"
 				CFrameQ = CFrame.new(10882.264, -2086.322, 10034.226)
-				CFrameMon = CFrame.new(10965.1025, -2158.8842, 9177.2597)
-			elseif a >= 2650 and a <= 2674 then
+				CFrameMon = CFrame.new(10965.1025, -2158.8842, 9177.2597))
+			                if ((v197 == 2650) or (v197 <= 2674) or (SelectMonster == "Sea Chanter")) then
 				Ms = "Sea Chanter"
-				QuestLv = 1;
 				NameQuest = "SubmergedQuest2";
+				QuestLv = 1;
 				NameMon = "Sea Chanter"
 				CFrameQ = CFrame.new(10882.264, -2086.322, 10034.226)
 				CFrameMon = CFrame.new(10621.0342, -2087.8440, 10102.0332)
-			elseif a >= 2675 and a <= 2699 then
+			        if ((v197 == 2675) or (v197 <= 2699) or (SelectMonster == "Ocean Prophe")) then
 				Ms = "Ocean Prophet"
-				QuestLv = 2;
 				NameQuest = "SubmergedQuest2";
+				QuestLv = 2;
 				NameMon = "Ocean Prophet"
 				CFrameQ = CFrame.new(10882.264, -2086.322, 10034.226)
 				CFrameMon = CFrame.new(11056.1445, -2001.6717, 10117.4493)
-			elseif a >= 2700 and a <= 2724 then
+			        if ((v197 == 2700) or (v197 <= 2724) or (SelectMonster == "High Disciple")) then
 				Ms = "High Disciple"
-				QuestLv = 1;
 				NameQuest = "SubmergedQuest3";
+				QuestLv = 1;
 				NameMon = "High Disciple"
 				CFrameQ = CFrame.new(9636.52441, -1992.19507, 9609.52832)
 				CFrameMon = CFrame.new(9828.087890625, -1940.908935546875, 9693.0634765625)
 			elseif a >= 2725 and a <= 2800 then
 				Ms = "Grand Devotee"
-				QuestLv = 2;
 				NameQuest = "SubmergedQuest3";
+				QuestLv = 2;
 				NameMon = "Grand Devotee"
 				CFrameQ = CFrame.new(9636.52441, -1992.19507, 9609.52832)
 				CFrameMon = CFrame.new(9557.5849609375, -1928.0404052734375, 9859.1826171875)
