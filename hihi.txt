@@ -1033,47 +1033,47 @@ function CheckLevel()
             NameMon = "Skull Slayer";
             CFrameQ = CFrame.new(- 16665.19140625, 104.59640502929688, 1579.6943359375);
             CFrameMon = CFrame.new(- 16811.5703125, 84.625244140625, 1542.235107421875);
-	        if ((v197 == 2600) or (v197 <= 2624) or (SelectMonster == "Reef Bandit")) then
+	       elseif ((v197 == 2600) or (v197 <= 2624) or (SelectMonster == "Reef Bandit")) then
 				Ms = "Reef Bandit"
 				NameQuest = "SubmergedQuest1";
 				QuestLv = 1;
 				NameMon = "Reef Bandit"
-				CFrameQ = CFrame.new(10882.264, -2086.322, 10034.226) -- NPC Submerged
+				CFrameQ = CFrame.new(10882.264, -2086.322, 10034.226); -- NPC Submerged
 				CFrameMon = CFrame.new(10736.6191, -2087.8439, 9338.4882);
-			        if ((v197 == 2625) or (v197 <= 2649) or (SelectMonster == "Coral Pirate")) then
+			  elseif ((v197 == 2625) or (v197 <= 2649) or (SelectMonster == "Coral Pirate")) then
 				Ms = "Coral Pirate"
 				NameQuest = "SubmergedQuest1";
-				QuestNameQuest = "SubmergedQuest2";Lv = 2;
+				QuestLv= 2;
 				NameMon = "Coral Pirate"
-				CFrameQ = CFrame.new(10882.264, -2086.322, 10034.226)
+				CFrameQ = CFrame.new(10882.264, -2086.322, 10034.226);
 				CFrameMon = CFrame.new(10965.1025, -2158.8842, 9177.2597));
-			                if ((v197 == 2650) or (v197 <= 2674) or (SelectMonster == "Sea Chanter")) then
+			                elseif ((v197 == 2650) or (v197 <= 2674) or (SelectMonster == "Sea Chanter") then
 				Ms = "Sea Chanter"
 				NameQuest = "SubmergedQuest2";
 				QuestLv = 1;
 				NameMon = "Sea Chanter"
-				CFrameQ = CFrame.new(10882.264, -2086.322, 10034.226)
+				CFrameQ = CFrame.new(10882.264, -2086.322, 10034.226);
 				CFrameMon = CFrame.new(10621.0342, -2087.8440, 10102.0332);
-			        if ((v197 == 2675) or (v197 <= 2699) or (SelectMonster == "Ocean Prophe")) then
+			        elseif ((v197 == 2675) or (v197 <= 2699) or (SelectMonster == "Ocean Prophet")) then
 				Ms = "Ocean Prophet"
 				NameQuest = "SubmergedQuest2";
 				QuestLv = 2;
 				NameMon = "Ocean Prophet"
-				CFrameQ = CFrame.new(10882.264, -2086.322, 10034.226)
+				CFrameQ = CFrame.new(10882.264, -2086.322, 10034.226);
 				CFrameMon = CFrame.new(11056.1445, -2001.6717, 10117.4493);
-			        if ((v197 == 2700) or (v197 <= 2724) or (SelectMonster == "High Disciple")) then
+			        elseif ((v197 == 2700) or (v197 <= 2724) or (SelectMonster == "High Disciple")) then
 				Ms = "High Disciple"
 				NameQuest = "SubmergedQuest3";
 				QuestLv = 1;
 				NameMon = "High Disciple"
-				CFrameQ = CFrame.new(9636.52441, -1992.19507, 9609.52832)
+				CFrameQ = CFrame.new(9636.52441, -1992.19507, 9609.52832);
 				CFrameMon = CFrame.new(9828.087890625, -1940.908935546875, 9693.0634765625);
-			elseif a >= 2725 and a <= 2800 then
+			elseif ((v197 == 2725) or (v197 <= 2800) or (SelectMonster == "Grand Devotee")) then
 				Ms = "Grand Devotee"
 				NameQuest = "SubmergedQuest3";
 				QuestLv = 2;
 				NameMon = "Grand Devotee"
-				CFrameQ = CFrame.new(9636.52441, -1992.19507, 9609.52832)
+				CFrameQ = CFrame.new(9636.52441, -1992.19507, 9609.52832);
 				CFrameMon = CFrame.new(9557.5849609375, -1928.0404052734375, 9859.1826171875);
         end
     end
