@@ -1046,8 +1046,8 @@ function CheckLevel()
 				QuestLv= 2;
 				NameMon = "Coral Pirate"
 				CFrameQ = CFrame.new(10882.264, -2086.322, 10034.226);
-				CFrameMon = CFrame.new(10965.1025, -2158.8842, 9177.2597));
-			                elseif ((v197 == 2650) or (v197 <= 2674) or (SelectMonster == "Sea Chanter") then
+				CFrameMon = CFrame.new(10965.1025, -2158.8842, 9177.2597);
+			                elseif ((v197 == 2650) or (v197 <= 2674) or (SelectMonster == "Sea Chanter")) then
 				Ms = "Sea Chanter"
 				NameQuest = "SubmergedQuest2";
 				QuestLv = 1;
@@ -1218,8 +1218,7 @@ elseif Sea3 then
         "Cake Island",
         "Choco Island",
         "Candy Island",
-        "Tiki Outpost",
-        "Submerged Island"
+        "Tiki Outpost"
     };
 end
 function CheckBossQuest()
