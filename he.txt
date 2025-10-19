@@ -1965,68 +1965,68 @@ local Window = Rayfield:CreateWindow({
 })
 
 local Tabs = {
-    Main = Window:AddTab({
+    Main = Window:CreateTab({
         Title = "Farm",
         Icon = ""
     }),
-    Settings = Window:AddTab({
+    Settings = Window:CreateTab({
         Title = "Config",
         Icon = ""
     }),
-    Melee = Window:AddTab({
+    Melee = Window:CreateTab({
         Title = "Fighting Style",
         Icon = ""
     }),
-    Quests = Window:AddTab({
-        Title = "Items Farm",
+    Quests = Window:CreateTab({
+        Title = "Dụng cụ",
         Icon = ""
     }),
-    New = Window:AddTab({
-        Title = "New Events",
+    New = Window:CreateTab({
+        Title = "Sự kiện mới",
         Icon = ""
     }),
-    SeaEvent = Window:AddTab({
-        Title = "Sea Events",
+    SeaEvent = Window:CreateTab({
+        Title = "biển",
         Icon = ""
     }),
-    Mirage = Window:AddTab({
-        Title = "Mirage + RaceV4",
+    Mirage = Window:CreateTab({
+        Title = "Up tộc",
         Icon = ""
     }),
-    Drago = Window:AddTab({
+    Drago = Window:CreateTab({
         Title = "Drago Dojo",
         Icon = ""
     }),
-    Prehistoric = Window:AddTab({
+    Prehistoric = Window:CreateTab({
         Title = "Prehistoric",
         Icon = ""
     }),
-    Raids = Window:AddTab({
+    Raids = Window:CreateTab({
         Title = "Raid",
         Icon = ""
     }),
-    Combat = Window:AddTab({
+    Combat = Window:CreateTab({
         Title = "Combat PVP",
         Icon = ""
     }),
-    Travel = Window:AddTab({
+    Travel = Window:CreateTab({
         Title = "Teleport",
         Icon = ""
     }),
-    Fruit = Window:AddTab({
+    Fruit = Window:CreateTab({
         Title = "Fruits",
         Icon = ""
     }),
-    Shop = Window:AddTab({
+    Shop = Window:CreateTab({
         Title = "Shop",
         Icon = ""
     }),
-    Misc = Window:AddTab({
+    Misc = Window:CreateTab({
         Title = "Misc",
         Icon = ""
     })
 }
-local FarmLevel = Tabs.Main:AddToggle("FarmLevel", {
+local FarmLevel = Tabs.Main:CreateToggle("FarmLevel", {
     Title = "Auto Farm Level",
     Description = "",
     Default = false
@@ -2074,7 +2074,7 @@ spawn(function()
         end
     end
 end)
-local TravelDress = Tabs.Main:AddToggle("TravelDress", {
+local TravelDress = Tabs.Main:CreateToggle("TravelDress", {
     Title = "Auto Travel Dressrosa",
     Description = "",
     Default = false
@@ -2116,7 +2116,7 @@ spawn(function()
         end)
     end
 end)
-local Zou = Tabs.Main:AddToggle("Zou", {
+local Zou = Tabs.Main:CreateToggle("Zou", {
     Title = "Auto Zou Quest",
     Description = "",
     Default = false
@@ -2260,9 +2260,9 @@ spawn(function()
     end
 end)
 
-Tabs.Main:AddSection("Miscellanea / Quest")
+Tabs.Main:CreateSection("Miscellanea / Quest")
 
-local ClosetMons = Tabs.Main:AddToggle("ClosetMons", {
+local ClosetMons = Tabs.Main:CreateToggle("ClosetMons", {
     Title = "Auto Farm Nearest",
     Description = "",
     Default = false
@@ -2288,7 +2288,7 @@ spawn(function()
         end)
     end
 end)
-local FactoryRaids = Tabs.Main:AddToggle("FactoryRaids", {
+local FactoryRaids = Tabs.Main:CreateToggle("FactoryRaids", {
     Title = "Auto Factory Raid",
     Description = "",
     Default = false
@@ -2314,7 +2314,7 @@ spawn(function()
         end)
     end
 end)
-local CastleRaids = Tabs.Main:AddToggle("CastleRaids", {
+local CastleRaids = Tabs.Main:CreateToggle("CastleRaids", {
     Title = "Auto Pirate Raid",
     Description = "",
     Default = false
@@ -2377,7 +2377,7 @@ spawn(function()
         end
     end
 end)
-Test = Tabs.Main:AddDropdown("Test", {
+Test = Tabs.Main:CreateDropdown("Test", {
     Title = "Choose Material",
     Values = MaterialList,
     Multi = false,
@@ -2386,7 +2386,7 @@ Test = Tabs.Main:AddDropdown("Test", {
 Test:OnChanged(function(Value)
     getgenv().SelectMaterial = Value
 end)
-Toggle = Tabs.Main:AddToggle("Toggle", {
+Toggle = Tabs.Main:CreateToggle("Toggle", {
     Title = "Auto Materials",
     Description = "",
     Default = false
@@ -2433,7 +2433,7 @@ spawn(function()
         end
     end
 end)
-local Q = Tabs.Main:AddToggle("Q", {
+local Q = Tabs.Main:CreateToggle("Q", {
     Title = "Auto Farm Ectoplasm",
     Description = "",
     Default = false
@@ -2465,7 +2465,7 @@ spawn(function()
         end)
     end
 end)
-local Bartilo = Tabs.Main:AddToggle("Bartilo", {
+local Bartilo = Tabs.Main:CreateToggle("Bartilo", {
     Title = "Auto Done Bartilo Quest",
     Description = "",
     Default = false
@@ -2544,7 +2544,7 @@ spawn(function()
         end)
     end
 end)
-local CitizenQ = Tabs.Main:AddToggle("CitizenQ", {
+local CitizenQ = Tabs.Main:CreateToggle("CitizenQ", {
     Title = "Auto Done Citizen Quest",
     Description = "",
     Default = false
@@ -2599,7 +2599,7 @@ spawn(function()
         end)
     end
 end)
-local Q = Tabs.Main:AddToggle("Q", {
+local Q = Tabs.Main:CreateToggle("Q", {
     Title = "Auto Training Dummy",
     Description = "",
     Default = false
@@ -2631,7 +2631,7 @@ spawn(function()
         end
     end
 end)
-local Berry = Tabs.Main:AddToggle("Berry", {
+local Berry = Tabs.Main:CreateToggle("Berry", {
     Title = "Auto Collect Berry",
     Description = "",
     Default = false
@@ -2667,7 +2667,7 @@ spawn(function()
         end
     end
 end)
-local Chest = Tabs.Main:AddToggle("Chest", {
+local Chest = Tabs.Main:CreateToggle("Chest", {
     Title = "Auto Collect Chest",
     Description = "",
     Default = false
@@ -2706,12 +2706,12 @@ spawn(function()
         end
     end
 end)
-Tabs.Main:AddSection("Miscellanea / Mastery")
+Tabs.Main:CreateSection("Miscellanea / Mastery")
 local posMastery = {
     "Cake",
     "Bone"
 }
-local Mastery_Config = Tabs.Main:AddDropdown("Mastery_Config", {
+local Mastery_Config = Tabs.Main:CreateDropdown("Mastery_Config", {
     Title = "Choose Island",
     Values = posMastery,
     Multi = false,
@@ -2720,7 +2720,7 @@ local Mastery_Config = Tabs.Main:AddDropdown("Mastery_Config", {
 Mastery_Config:OnChanged(function(Value)
     SelectIsland = Value
 end)
-local MasteryFruits = Tabs.Main:AddToggle("MasteryFruits", {
+local MasteryFruits = Tabs.Main:CreateToggle("MasteryFruits", {
     Title = "Auto Mastery Fruits",
     Description = "",
     Default = false
@@ -2776,7 +2776,7 @@ spawn(function()
         end
     end
 end)
-local MasteryGun = Tabs.Main:AddToggle("MasteryGun", {
+local MasteryGun = Tabs.Main:CreateToggle("MasteryGun", {
     Title = "Auto Mastery Gun",
     Description = "",
     Default = false
@@ -2873,7 +2873,7 @@ spawn(function()
         end
     end
 end)
-local MasterySword = Tabs.Main:AddToggle("MasterySword", {
+local MasterySword = Tabs.Main:CreateToggle("MasterySword", {
     Title = "Auto Mastery All Sword",
     Description = "",
     Default = false
@@ -2951,8 +2951,8 @@ spawn(function()
     end
 end)
 
-Tabs.Main:AddSection("Generals Quests / Items")
-local MobKilled = Tabs.Main:AddParagraph({
+Tabs.Main:CreateSection("Generals Quests / Items")
+local MobKilled = Tabs.Main:CreateParagraph({
     Title = "Cake Princes :",
     Content = ""
 })
@@ -2966,7 +2966,7 @@ spawn(function()
         end)
     end
 end)
-local CheckingBone = Tabs.Main:AddParagraph({
+local CheckingBone = Tabs.Main:CreateParagraph({
     Title = " Bones :",
     Content = ""
 })
@@ -2977,7 +2977,7 @@ spawn(function()
         end)
     end
 end)
-local Q = Tabs.Main:AddToggle("Q", {
+local Q = Tabs.Main:CreateToggle("Q", {
     Title = "Auto Cake Prince",
     Description = "",
     Default = false
@@ -3066,7 +3066,7 @@ spawn(function()
         end
     end
 end)
-local Q = Tabs.Main:AddToggle("Q", {
+local Q = Tabs.Main:CreateToggle("Q", {
     Title = "Auto Bones",
     Description = "",
     Default = false
@@ -3136,7 +3136,7 @@ spawn(function()
         end
     end
 end)
-local Q = Tabs.Main:AddToggle("Q", {
+local Q = Tabs.Main:CreateToggle("Q", {
     Title = "Accept Quests",
     Description = "",
     Default = false
@@ -3144,7 +3144,7 @@ local Q = Tabs.Main:AddToggle("Q", {
 Q:OnChanged(function(Value)
     _G.AcceptQuestC = Value
 end)          
-local Q = Tabs.Main:AddToggle("Q", {
+local Q = Tabs.Main:CreateToggle("Q", {
     Title = "Auto Farm Mirror",
     Description = "",
     Default = false
@@ -3169,7 +3169,7 @@ spawn(function()
         end
     end
 end)
-local Q = Tabs.Main:AddToggle("Q", {
+local Q = Tabs.Main:CreateToggle("Q", {
     Title = "Auto Soul Reaper [Fully]",
     Description = "",
     Default = false
@@ -3205,7 +3205,7 @@ spawn(function()
         end
     end
 end)
-local Q = Tabs.Main:AddToggle("Q", {
+local Q = Tabs.Main:CreateToggle("Q", {
     Title = "Auto Random Bones",
     Description = "",
     Default = false
@@ -3225,7 +3225,7 @@ spawn(function()
         end)
     end
 end)
-local Q = Tabs.Main:AddToggle("Q", {
+local Q = Tabs.Main:CreateToggle("Q", {
     Title = "Auto Try Luck Gravestone",
     Description = "",
     Default = false
@@ -3245,7 +3245,7 @@ spawn(function()
         end
     end
 end)
-local Q = Tabs.Main:AddToggle("Q", {
+local Q = Tabs.Main:CreateToggle("Q", {
     Title = "Auto Pray Gravestone",
     Description = "",
     Default = false
@@ -3266,7 +3266,7 @@ spawn(function()
     end
 end)
 
-Tabs.Main:AddSection("Unlocked Dungeon")
+Tabs.Main:CreateSection("Unlocked Dungeon")
 local Q = Tabs.Main:AddToggle("Q", {
     Title = "Auto Unlock Dough dungeon",
     Description = "",
