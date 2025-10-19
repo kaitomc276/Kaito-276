@@ -1949,16 +1949,21 @@ QuestNeta = function()
     }
 end
 
-local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
-local Window = Fluent:CreateWindow({
-    Title = "none",
-    SubTitle = "",
-    TabWidth = 155,
-    Size = UDim2.fromOffset(485, 370),
-    Acrylic = false,
-    Theme = "Dark",
-    MinimizeKey = Enum.KeyCode.End
+-- 🍌 Banana Cat Hub - Giao diện mới thay Fluent
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+local Window = Rayfield:CreateWindow({
+    Name = "🍌 Banana Cat Hub - Blox Fruit",
+    LoadingTitle = "Banana Cat Hub Loading...",
+    LoadingSubtitle = "Powered by Rayfield UI",
+    ConfigurationSaving = {
+        Enabled = true,
+        FolderName = "BananaCatHub",
+        FileName = "BloxFruits"
+    },
+    KeySystem = false,
 })
+
 local Tabs = {
     Main = Window:AddTab({
         Title = "Farm",
@@ -10973,3 +10978,5 @@ local rotateTween = TweenService:Create(ImageButton, TweenInfo.new(0.5, Enum.Eas
 ImageButton.MouseButton1Down:Connect(function()
 	game:GetService("VirtualInputManager"):SendKeyEvent(true, Enum.KeyCode.End, false, game);
 end);
+
+Rayfield:LoadConfiguration()
