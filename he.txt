@@ -1965,9 +1965,7 @@ local Window = Rayfield:CreateWindow({
 })
 
 local Tabs = {
-    Main = Window:CreateTab({
-        Title = "Farm",
-        Icon = ""
+    Main = Window:CreateTab({Farm
     }),
     Settings = Window:CreateTab({
         Title = "Config",
@@ -2027,7 +2025,6 @@ local Tabs = {
     })
 }
 local FarmLevel = Tabs.Main:CreateToggle("FarmLevel", {
-    Title = "Auto Farm Level",
     Description = "",
     Default = false
 })
