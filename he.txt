@@ -1983,7 +1983,7 @@ local MiscTab = Window:CreateTab("Misc")
     })
 }
 local FarmLevel = Tabs.Main:AddToggle("FarmLevel", {
-    Name = "Auto Farm Level",
+    Title = "Auto Farm Level",
     Description = "",
     Default = false
 })
