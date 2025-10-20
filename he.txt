@@ -1963,23 +1963,66 @@ local Window = Rayfield:CreateWindow({
     },
     KeySystem = false,
 })
-
--- 🧱 Tạo các tab
-local MainTab = Window:CreateTab("Farm")
-local SettingsTab = Window:CreateTab("Config")
-local MeleeTab = Window:CreateTab("Fighting Style")
-local QuestTab = Window:CreateTab("Items Farm")
-local NewTab = Window:CreateTab("New Events")
-local SeaEventTab = Window:CreateTab("Sea Events")
-local MirageTab = Window:CreateTab("Mirage + RaceV4 ")
-local DragoTab = Window:CreateTab("Drago Dojo")
-local PrehistoricTab = Window:CreateTab("Prehistoric")
-local RaidsTab = Window:CreateTab("Raid")
-local CombatTab = Window:CreateTab("Combat PVP")
-local TravelTab = Window:CreateTab("Teleport")
-local FruitTab = Window:CreateTab("Fruits")
-local ShopTab = Window:CreateTab("Shop")
-local MiscTab = Window:CreateTab("Misc")
+local Tabs = {
+    Main = Window:AddTab({
+        Title = "Farm",
+        Icon = ""
+    }),
+    Settings = Window:AddTab({
+        Title = "Config",
+        Icon = ""
+    }),
+    Melee = Window:AddTab({
+        Title = "Fighting Style",
+        Icon = ""
+    }),
+    Quests = Window:AddTab({
+        Title = "Items Farm",
+        Icon = ""
+    }),
+    New = Window:AddTab({
+        Title = "New Events",
+        Icon = ""
+    }),
+    SeaEvent = Window:AddTab({
+        Title = "Sea Events",
+        Icon = ""
+    }),
+    Mirage = Window:AddTab({
+        Title = "Mirage + RaceV4",
+        Icon = ""
+    }),
+    Drago = Window:AddTab({
+        Title = "Drago Dojo",
+        Icon = ""
+    }),
+    Prehistoric = Window:AddTab({
+        Title = "Prehistoric",
+        Icon = ""
+    }),
+    Raids = Window:AddTab({
+        Title = "Raid",
+        Icon = ""
+    }),
+    Combat = Window:AddTab({
+        Title = "Combat PVP",
+        Icon = ""
+    }),
+    Travel = Window:AddTab({
+        Title = "Teleport",
+        Icon = ""
+    }),
+    Fruit = Window:AddTab({
+        Title = "Fruits",
+        Icon = ""
+    }),
+    Shop = Window:AddTab({
+        Title = "Shop",
+        Icon = ""
+    }),
+    Misc = Window:AddTab({
+        Title = "Misc",
+        Icon = ""
     })
 }
 local FarmLevel = Tabs.Main:AddToggle("FarmLevel", {
@@ -10934,5 +10977,5 @@ local rotateTween = TweenService:Create(ImageButton, TweenInfo.new(0.5, Enum.Eas
 ImageButton.MouseButton1Down:Connect(function()
 	game:GetService("VirtualInputManager"):SendKeyEvent(true, Enum.KeyCode.End, false, game);
 end);
-
+-- 🚀 Load Config cuối
 Rayfield:LoadConfiguration()
