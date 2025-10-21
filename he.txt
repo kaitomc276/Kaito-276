@@ -1963,70 +1963,27 @@ local Window = Rayfield:CreateWindow({
     },
     KeySystem = false,
 })
-local Tabs = {
-    Main = Window:AddTab({
-        Title = "Farm",
-        Icon = ""
-    }),
-    Settings = Window:AddTab({
-        Title = "Config",
-        Icon = ""
-    }),
-    Melee = Window:AddTab({
-        Title = "Fighting Style",
-        Icon = ""
-    }),
-    Quests = Window:AddTab({
-        Title = "Items Farm",
-        Icon = ""
-    }),
-    New = Window:AddTab({
-        Title = "New Events",
-        Icon = ""
-    }),
-    SeaEvent = Window:AddTab({
-        Title = "Sea Events",
-        Icon = ""
-    }),
-    Mirage = Window:AddTab({
-        Title = "Mirage + RaceV4",
-        Icon = ""
-    }),
-    Drago = Window:AddTab({
-        Title = "Drago Dojo",
-        Icon = ""
-    }),
-    Prehistoric = Window:AddTab({
-        Title = "Prehistoric",
-        Icon = ""
-    }),
-    Raids = Window:AddTab({
-        Title = "Raid",
-        Icon = ""
-    }),
-    Combat = Window:AddTab({
-        Title = "Combat PVP",
-        Icon = ""
-    }),
-    Travel = Window:AddTab({
-        Title = "Teleport",
-        Icon = ""
-    }),
-    Fruit = Window:AddTab({
-        Title = "Fruits",
-        Icon = ""
-    }),
-    Shop = Window:AddTab({
-        Title = "Shop",
-        Icon = ""
-    }),
-    Misc = Window:AddTab({
-        Title = "Misc",
-        Icon = ""
+-- 🍌 Banana Cat Hub - Tabs
+local Main = Window:CreateTab("Farm", 4483362458)
+local Settings = Window:CreateTab("Config", 4483362458)
+local Melee = Window:CreateTab("Fighting Style", 4483362458)
+local Quests = Window:CreateTab("Items Farm", 4483362458)
+local New = Window:CreateTab("New Events", 4483362458)
+local SeaEvent = Window:CreateTab("Sea Events", 4483362458)
+local Mirage = Window:CreateTab("Mirage + RaceV4", 4483362458)
+local Drago = Window:CreateTab("Drago Dojo", 4483362458)
+local Prehistoric = Window:CreateTab("Prehistoric", 4483362458)
+local Raids = Window:CreateTab("Raid", 4483362458)
+local Combat = Window:CreateTab("Combat PVP", 4483362458)
+local Travel = Window:CreateTab("Teleport", 4483362458)
+local Fruit = Window:CreateTab("Fruits", 4483362458)
+local Shop = Window:CreateTab("Shop", 4483362458)
+local Misc = Window:CreateTab("Misc", 4483362458)
+
     })
 }
-local FarmLevel = Tabs.Main:AddToggle("FarmLevel", {
-    Title = "Auto Farm Level",
+Farm.CreateButton({
+    Name = "Auto Farm Level",
     Description = "",
     Default = false
 })
