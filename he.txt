@@ -1949,8 +1949,8 @@ QuestNeta = function()
     }
 end
 
--- 🍌 Banana Cat Hub - Giao diện mới thay Fluent
-local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+-- 🍌 Banana Cat Hub - Blox Fruit
+local Rayfield = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
 
 local Window = Rayfield:CreateWindow({
     Name = "🍌 Banana Cat Hub - Blox Fruit",
@@ -1963,8 +1963,9 @@ local Window = Rayfield:CreateWindow({
     },
     KeySystem = false,
 })
--- 🍌 Banana Cat Hub - Tabs
-local Main = Window:CreateTab("Farm", 4483362458)
+
+-- 🍌 Tabs
+local Farm = Window:CreateTab("Farm", 4483362458)
 local Settings = Window:CreateTab("Config", 4483362458)
 local Melee = Window:CreateTab("Fighting Style", 4483362458)
 local Quests = Window:CreateTab("Items Farm", 4483362458)
@@ -1980,9 +1981,8 @@ local Fruit = Window:CreateTab("Fruits", 4483362458)
 local Shop = Window:CreateTab("Shop", 4483362458)
 local Misc = Window:CreateTab("Misc", 4483362458)
 
-    })
-}
-Farm.CreateButton({
+-- 🧠 Auto Farm
+local FarmLevel = Farm:CreateToggle({
     Name = "Auto Farm Level",
     Description = "",
     Default = false
