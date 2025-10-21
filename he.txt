@@ -1964,7 +1964,7 @@ local Window = Rayfield:CreateWindow({
     KeySystem = false,
 })
 
--- 🍌 Tabs
+local Tabs = {
 local Farm = Window:CreateTab("Farm", 4483362458)
 local Settings = Window:CreateTab("Config", 4483362458)
 local Melee = Window:CreateTab("Fighting Style", 4483362458)
@@ -1980,9 +1980,8 @@ local Travel = Window:CreateTab("Teleport", 4483362458)
 local Fruit = Window:CreateTab("Fruits", 4483362458)
 local Shop = Window:CreateTab("Shop", 4483362458)
 local Misc = Window:CreateTab("Misc", 4483362458)
-
--- 🧠 Auto Farm
-local FarmLevel = Farm:CreateToggle({
+ }
+local FarmLevel = Tabs.Main:AddToggle("FarmLevel", {
     Name = "Auto Farm Level",
     Description = "",
     Default = false
