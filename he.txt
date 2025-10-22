@@ -1948,78 +1948,43 @@ QuestNeta = function()
         [6] = PosQ
     }
 end
---[[
-you better have a good reason on WHY you are looking at the script raw
-]]
-if not game.Players.LocalPlayer.PlayerScripts:FindFirstChild("Loaded") then
-	local data = Instance.new("NumberValue") --does this really matter no i added it for a damn reason
-	data.Name = "Loaded"
-	data.Parent = game.Players.LocalPlayer.PlayerScripts
-	print("Loaded Scripts")
-local Rayfield = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
-local event = ""
-local fling = false
-local opt = false
-local antiteleport = false
-local range = 15
-local partsdipping = false
--- Create the main window
-local noclip = false
-local speed = 16
-local infjump = false
-local fakerun = false
-local infjumpv2 = false
-	local antifling = false
-	local RunService = game:GetService("RunService")
-	local UserInputService = game:GetService("UserInputService")
-local Players = game:GetService("Players")
-local player = Players.LocalPlayer
-local character = player.Character or player.CharacterAdded:Wait()
-local humanoid = character:WaitForChild("Humanoid")
-local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
-local bodyVelocity = Instance.new("BodyVelocity")
-local Window = Rayfield:CreateWindow({
-	Name = "W112ND",
-	LoadingTitle = "Please wait",
-	LoadingSubtitle = "By windows11_2nd",
-	ShowText = "W112ND", 
-	ConfigurationSaving = { 
-		Enabled = true,
-		FolderName = "Exploits", 
-		FileName = "Tools"
-	},
-	Discord = {
-		Enabled = false,
-		Invite = "",
-		RememberJoins = true
-	},
-	KeySystem = false 
-})
-Rayfield:Notify({
-	Title = "Warning",
-	Content = "This is the only OFFICAL W112ND watch out for fake versions.",
-	Duration = 4
-})
 
+-- // 🍌 Banana Cat Hub - Empty UI Template //
+-- // Giao diện mượt, giữ style BananaHub, không tab, không nút //
+
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+-- 🖤 Tạo cửa sổ chính
+local Window = Rayfield:CreateWindow({
+    Name = "🍌 Banana Cat Hub - Blox Fruit",
+    LoadingTitle = "Banana Cat Hub Loading...",
+    LoadingSubtitle = "Powered by Rayfield UI",
+    ConfigurationSaving = {
+        Enabled = true,
+        FolderName = "BananaCatHub",
+        FileName = "BloxFruits"
+    },
+    KeySystem = false,
+})
 -- 🪟 Tạo các Tab chính
-local FarmLevel = Window:CreateTab("Farm", 4483362458)
-local Settings = Window:CreateTab("Config", 4483362458)
-local Melee = Window:CreateTab("Fighting Style", 4483362458)
-local Quests = Window:CreateTab("Items Farm", 4483362458)
-local New = Window:CreateTab("New Events", 4483362458)
-local SeaEvent = Window:CreateTab("Sea Events", 4483362458)
-local Mirage = Window:CreateTab("Mirage + RaceV4", 4483362458)
-local Drago = Window:CreateTab("Drago Dojo", 4483362458)
-local Prehistoric = Window:CreateTab("Prehistoric", 4483362458)
-local Raids = Window:CreateTab("Raid", 4483362458)
-local Combat = Window:CreateTab("Combat PVP", 4483362458)
-local Travel = Window:CreateTab("Teleport", 4483362458)
-local Fruit = Window:CreateTab("Fruits", 4483362458)
-local Shop = Window:CreateTab("Shop", 4483362458)
-local Misc = Window:CreateTab("Misc", 4483362458)
+local mainTab        = Window:CreateTab("Farm", "sword")
+local settingsTab    = Window:CreateTab("Config", "settings")
+local meleeTab       = Window:CreateTab("Fighting Style", "crosshair")
+local questsTab      = Window:CreateTab("Items Farm", "package")
+local newTab         = Window:CreateTab("New Events", "calendar")
+local seaEventTab    = Window:CreateTab("Sea Events", "waves")
+local mirageTab      = Window:CreateTab("Mirage + RaceV4", "sparkles")
+local dragoTab       = Window:CreateTab("Drago Dojo", "flame")
+local prehistoricTab = Window:CreateTab("Prehistoric", "bone")
+local raidsTab       = Window:CreateTab("Raid", "shield")
+local combatTab      = Window:CreateTab("Combat PVP", "swords")
+local travelTab      = Window:CreateTab("Teleport", "map-pin")
+local fruitTab       = Window:CreateTab("Fruits", "apple")
+local shopTab        = Window:CreateTab("Shop", "shopping-cart")
+local miscTab        = Window:CreateTab("Misc", "more-horizontal")
 
 local FarmLevel = Tabs.Main:AddToggle("FarmLevel", {
-    Name = "Auto Farm Level",
+    Title = "Auto Farm Level",
     Description = "",
     Default = false
 })
@@ -10970,5 +10935,4 @@ local rotateTween = TweenService:Create(ImageButton, TweenInfo.new(0.5, Enum.Eas
 ImageButton.MouseButton1Down:Connect(function()
 	game:GetService("VirtualInputManager"):SendKeyEvent(true, Enum.KeyCode.End, false, game);
 end);
--- 🚀 Load Config cuối
-Rayfield:LoadConfiguration()
+-- 🚀 Giữ config (để UI nhớ trạng thái khi mở lại)
