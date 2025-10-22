@@ -1949,14 +1949,10 @@ QuestNeta = function()
     }
 end
 
--- // 🍌 Banana Cat Hub - Empty UI Template //
--- // Giao diện mượt, giữ style BananaHub, không tab, không nút //
-
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
--- 🖤 Tạo cửa sổ chính
 local Window = Rayfield:CreateWindow({
-    Name = "🍌 Banana Cat Hub - Blox Fruit",
+    Name = "🍌 Banana Cat Hub - Blox Fruits",
     LoadingTitle = "Banana Cat Hub Loading...",
     LoadingSubtitle = "Powered by Rayfield UI",
     ConfigurationSaving = {
@@ -1966,6 +1962,7 @@ local Window = Rayfield:CreateWindow({
     },
     KeySystem = false,
 })
+
 -- 🪟 Tạo các Tab chính
 local mainTab        = Window:CreateTab("Farm", "sword")
 local settingsTab    = Window:CreateTab("Config", "settings")
