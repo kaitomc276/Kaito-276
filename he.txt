@@ -1948,24 +1948,61 @@ QuestNeta = function()
         [6] = PosQ
     }
 end
-
--- 🍌 Banana Cat Hub - Blox Fruit
+--[[
+you better have a good reason on WHY you are looking at the script raw
+]]
+if not game.Players.LocalPlayer.PlayerScripts:FindFirstChild("Loaded") then
+	local data = Instance.new("NumberValue") --does this really matter no i added it for a damn reason
+	data.Name = "Loaded"
+	data.Parent = game.Players.LocalPlayer.PlayerScripts
+	print("Loaded Scripts")
 local Rayfield = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
-
+local event = ""
+local fling = false
+local opt = false
+local antiteleport = false
+local range = 15
+local partsdipping = false
+-- Create the main window
+local noclip = false
+local speed = 16
+local infjump = false
+local fakerun = false
+local infjumpv2 = false
+	local antifling = false
+	local RunService = game:GetService("RunService")
+	local UserInputService = game:GetService("UserInputService")
+local Players = game:GetService("Players")
+local player = Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local humanoid = character:WaitForChild("Humanoid")
+local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+local bodyVelocity = Instance.new("BodyVelocity")
 local Window = Rayfield:CreateWindow({
-    Name = "🍌 Banana Cat Hub - Blox Fruit",
-    LoadingTitle = "Banana Cat Hub Loading...",
-    LoadingSubtitle = "Powered by Rayfield UI",
-    ConfigurationSaving = {
-        Enabled = true,
-        FolderName = "BananaCatHub",
-        FileName = "BloxFruits"
-    },
-    KeySystem = false,
+	Name = "W112ND",
+	LoadingTitle = "Please wait",
+	LoadingSubtitle = "By windows11_2nd",
+	ShowText = "W112ND", 
+	ConfigurationSaving = { 
+		Enabled = true,
+		FolderName = "Exploits", 
+		FileName = "Tools"
+	},
+	Discord = {
+		Enabled = false,
+		Invite = "",
+		RememberJoins = true
+	},
+	KeySystem = false 
+})
+Rayfield:Notify({
+	Title = "Warning",
+	Content = "This is the only OFFICAL W112ND watch out for fake versions.",
+	Duration = 4
 })
 
 -- 🪟 Tạo các Tab chính
-local Farm = Window:CreateTab("Farm", 4483362458)
+local FarmLevel = Window:CreateTab("Farm", 4483362458)
 local Settings = Window:CreateTab("Config", 4483362458)
 local Melee = Window:CreateTab("Fighting Style", 4483362458)
 local Quests = Window:CreateTab("Items Farm", 4483362458)
